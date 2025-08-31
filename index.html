@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terrace</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;700&family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
         <header> 
@@ -36,13 +38,15 @@
                     </ul>
                 </div>
             </nav>
-            <div class="header_contacs">
-                <svg class="svg_phone" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.0325 11.4951C16.7877 12.1994 18.0973 13.1382 19.0905 14.2425C19.3411 16.0305 17.9434 17.3416 16.6662 18.1466C13.6394 18.6816 9.33998 16.8934 5.78318 13.3366C2.22638 9.7795 0.438378 5.48042 0.973235 2.45367C1.77816 1.17639 3.08918 -0.221299 4.87735 0.0294329C5.98159 1.02279 6.92057 2.33247 7.6249 4.08783C7.74209 4.38006 7.67513 4.71355 7.46084 4.94429C7.10941 5.32277 6.47393 5.96055 5.49383 6.78314C5.247 6.99032 5.18687 7.34429 5.34437 7.6254C6.02861 8.84655 6.91884 10.0283 8.00539 11.115C9.09142 12.201 10.2747 13.093 11.494 13.7791C11.7753 13.9374 12.1303 13.8771 12.3376 13.6295C13.1596 12.6477 13.7971 12.0115 14.1756 11.6598C14.4063 11.4451 14.74 11.378 15.0323 11.4954L15.0325 11.4951Z" fill="#151414"/>
-                </svg>
-                <span class="phone">+7 (913) 567-99-99</span>
-            </div>
-            <button class="header_button">Заказать звонок</button>
+                <div class="header_right">
+                    <div class="header_contacs">
+                        <svg class="svg_phone" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.0325 11.4951C16.7877 12.1994 18.0973 13.1382 19.0905 14.2425C19.3411 16.0305 17.9434 17.3416 16.6662 18.1466C13.6394 18.6816 9.33998 16.8934 5.78318 13.3366C2.22638 9.7795 0.438378 5.48042 0.973235 2.45367C1.77816 1.17639 3.08918 -0.221299 4.87735 0.0294329C5.98159 1.02279 6.92057 2.33247 7.6249 4.08783C7.74209 4.38006 7.67513 4.71355 7.46084 4.94429C7.10941 5.32277 6.47393 5.96055 5.49383 6.78314C5.247 6.99032 5.18687 7.34429 5.34437 7.6254C6.02861 8.84655 6.91884 10.0283 8.00539 11.115C9.09142 12.201 10.2747 13.093 11.494 13.7791C11.7753 13.9374 12.1303 13.8771 12.3376 13.6295C13.1596 12.6477 13.7971 12.0115 14.1756 11.6598C14.4063 11.4451 14.74 11.378 15.0323 11.4954L15.0325 11.4951Z" fill="#151414"/>
+                        </svg>
+                        <span class="phone">+7 (913) 567-99-99</span>
+                    </div>
+                    <button class="header_button">Заказать звонок</button>  
+                </div>
                 <div class="modal" id="formModal">
                     <div class="modal-content">
                         <span class="close" id="closeModal">&times;</span>
@@ -66,7 +70,9 @@
         </header>
     <main>
         <section class="banner">
-            <img src="images/banner.jpg" alt="Баннер">
+                <div class="image-container">
+                    <img src="images/banner.jpg" alt="Баннер">
+                </div>
             <div class="banner_text">
                 <h1>Европейская терраса<br>для вашего дома</h1>
                 <h3>Террасная композитная доска в Москве</h3>
@@ -74,6 +80,24 @@
             <button class="banner_button">Вызвать на замер</button>    
         </section>
         <section class="cards">
+            <button class="left_arrow"> 
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2_613)">
+                <path d="M7.90198 23.7311L8.55923 23.0738L1.45063 15.9657L31 15.9653L31 15.0357L1.45063 15.0361L8.55922 7.92618L7.90198 7.26893L1.15912e-06 15.1723L1.21658e-06 15.8296L7.90198 23.7311Z" fill="#151414"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_2_613">
+                <rect width="31" height="31" fill="white" transform="translate(31 31) rotate(180)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </button>
+            <button class="right_arrow"> 
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.098 7.26892L22.4408 7.92617L29.5494 15.0343L0 15.0347V15.9643L29.5494 15.9639L22.4408 23.0738L23.098 23.7311L31 15.8277V15.1704L23.098 7.26892Z" fill="#151414"/>
+                </svg>
+
+            </button>
             <h2>Что мы можем сделать для вас</h2>
             <div class="cards_container">
                 <div class="card" id="decking">
@@ -86,7 +110,7 @@
                 </div>
                 <div class="card" id="project">
                     <img src="images/project.jpg" alt="Проектыне работы">
-                    <div class="card_text">Проектыне работы</div>
+                    <div class="card_text">Проектные работы</div>
                 </div>
                 <div class="card" id="construction">
                     <img src="images/construction.jpg" alt="Строительство и благоустройство">
@@ -109,7 +133,7 @@
             <h3>Реквизиты</h3>
             <p>ИНН 123456789</p>
             <p>ОГРН 1212121212121</p>
-            <p>© ООО «Терраса» 2009–2023</p>
+            <a>© ООО «Терраса» 2009–2023<br></a>
             <a href="#">Политика конфиденциальности</a>
             </div>
 
